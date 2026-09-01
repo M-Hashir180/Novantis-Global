@@ -1,5 +1,7 @@
 import React from 'react';
 
+const BASE = import.meta.env.BASE_URL;
+
 interface LogoProps {
   className?: string;
   size?: number;
@@ -11,7 +13,7 @@ export const NovantisLogoChip: React.FC<LogoProps> = ({ className = 'w-16 h-16',
     style={size ? { width: size, height: size } : undefined}
   >
     <img 
-      src="/assets/novantis-logo.png" 
+      src={`${BASE}assets/novantis-logo.png`}
       alt="Novantis Global" 
       className="w-full h-full object-contain filter drop-shadow-[0_0_20px_rgba(0,229,255,0.85)] scale-110"
     />
@@ -21,7 +23,7 @@ export const NovantisLogoChip: React.FC<LogoProps> = ({ className = 'w-16 h-16',
 export const NovantisFullLogo: React.FC<{ className?: string }> = ({ className = 'h-10' }) => (
   <div className={`flex items-center gap-3.5 select-none ${className}`}>
     <img 
-      src="/assets/novantis-logo.png" 
+      src={`${BASE}assets/novantis-logo.png`}
       alt="Novantis Global" 
       className="w-10 h-10 object-contain drop-shadow-[0_0_15px_rgba(0,229,255,0.7)]"
     />
@@ -41,7 +43,7 @@ export const NovantisFullLogo: React.FC<{ className?: string }> = ({ className =
 export const SapLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
   <div className={`flex items-center justify-center rounded-xl bg-white p-1.5 shadow-md shadow-black/40 overflow-hidden ${className}`}>
     <img 
-      src="/assets/sap.jpg" 
+      src={`${BASE}assets/sap.jpg`}
       alt="SAP S/4HANA" 
       className="w-full h-full object-contain"
     />
@@ -51,7 +53,7 @@ export const SapLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
 export const SalesforceLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
   <div className={`flex items-center justify-center rounded-xl bg-white p-1.5 shadow-md shadow-black/40 overflow-hidden ${className}`}>
     <img 
-      src="/assets/salesforce.png" 
+      src={`${BASE}assets/salesforce.png`}
       alt="Salesforce" 
       className="w-full h-full object-contain scale-105"
     />
@@ -61,7 +63,7 @@ export const SalesforceLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' })
 export const ServicenowLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
   <div className={`flex items-center justify-center rounded-xl bg-white px-2 py-1 shadow-md shadow-black/40 overflow-hidden ${className}`}>
     <img 
-      src="/assets/servicenow.png" 
+      src={`${BASE}assets/servicenow.png`}
       alt="ServiceNow" 
       className="w-full h-full object-contain"
     />
@@ -71,7 +73,7 @@ export const ServicenowLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' })
 export const MicrosoftLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
   <div className={`flex items-center justify-center rounded-xl bg-white px-2 py-1 shadow-md shadow-black/40 overflow-hidden ${className}`}>
     <img 
-      src="/assets/microsoft.jpg" 
+      src={`${BASE}assets/microsoft.jpg`}
       alt="Microsoft Dynamics 365" 
       className="w-full h-full object-contain scale-105"
     />
@@ -81,7 +83,7 @@ export const MicrosoftLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) 
 export const OracleLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
   <div className={`flex items-center justify-center rounded-xl bg-white px-2 py-1 shadow-md shadow-black/40 overflow-hidden ${className}`}>
     <img 
-      src="/assets/oracle.png" 
+      src={`${BASE}assets/oracle.png`}
       alt="Oracle NetSuite" 
       className="w-full h-full object-contain"
     />
@@ -91,7 +93,7 @@ export const OracleLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => 
 export const OdooLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
   <div className={`flex items-center justify-center rounded-xl bg-[#714B67] p-1 shadow-md shadow-black/40 overflow-hidden border border-white/20 ${className}`}>
     <img 
-      src="/assets/odoo.png" 
+      src={`${BASE}assets/odoo.png`}
       alt="Odoo" 
       className="w-full h-full object-contain rounded-lg"
     />
@@ -101,7 +103,7 @@ export const OdooLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
 export const ErpnextLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) => (
   <div className={`flex items-center justify-center rounded-xl bg-white px-2 py-1 shadow-md shadow-black/40 overflow-hidden ${className}`}>
     <img 
-      src="/assets/erpnext.png" 
+      src={`${BASE}assets/erpnext.png`}
       alt="ERPNext" 
       className="w-full h-full object-contain"
     />
@@ -110,12 +112,12 @@ export const ErpnextLogo: React.FC<LogoProps> = ({ className = 'w-28 h-12' }) =>
 
 export const CategoryIconBadge: React.FC<{ type: 'erp' | 'crm' | 'itsm' | 'data' | 'ai' | 'cloud'; className?: string }> = ({ type, className = 'w-10 h-10' }) => {
   const imageMap = {
-    erp: '/assets/cat-erp.jpg',
-    crm: '/assets/cat-crm.png',
-    itsm: '/assets/cat-itsm.jpg',
-    data: '/assets/cat-data.png',
-    ai: '/assets/cat-ai.jpg',
-    cloud: '/assets/cat-cloud.png',
+    erp: `${BASE}assets/cat-erp.jpg`,
+    crm: `${BASE}assets/cat-crm.png`,
+    itsm: `${BASE}assets/cat-itsm.jpg`,
+    data: `${BASE}assets/cat-data.png`,
+    ai: `${BASE}assets/cat-ai.jpg`,
+    cloud: `${BASE}assets/cat-cloud.png`,
   };
 
   return (
