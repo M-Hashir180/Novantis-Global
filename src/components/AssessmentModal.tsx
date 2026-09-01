@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { X, CheckCircle2, Sparkles, ArrowRight, ShieldCheck, Clock } from 'lucide-react';
-import { ASSESSMENT_OFFERS, PLATFORM_PRACTICES } from '../data/novantisData';
+import { X, CheckCircle2, ArrowRight, ShieldCheck } from 'lucide-react';
+import { ASSESSMENT_OFFERS } from '../data/novantisData';
 import { NovantisLogoChip } from './BrandLogos';
 
 interface AssessmentModalProps {

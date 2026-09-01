@@ -1,6 +1,6 @@
 import React from 'react';
 import { NovantisLogoChip } from './BrandLogos';
-import { Sparkles, Quote, CheckCircle2 } from 'lucide-react';
+import { Sparkles, CheckCircle2 } from 'lucide-react';
 
 export const CeoSection: React.FC = () => {
   return (

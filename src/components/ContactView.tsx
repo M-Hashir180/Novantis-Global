@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Phone, Clock, Send, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { NovantisLogoChip } from './BrandLogos';
 
 export const ContactView: React.FC = () => {

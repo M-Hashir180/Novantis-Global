@@ -16,8 +16,7 @@ import {
   GitFork, 
   ShieldAlert, 
   HeartHandshake,
-  ChevronDown,
-  Quote
+  ChevronDown
 } from 'lucide-react';
 import { NovantisLogoChip } from './BrandLogos';
 

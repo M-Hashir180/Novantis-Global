@@ -1,7 +1,6 @@
 import React from 'react';
 import { ASSESSMENT_OFFERS } from '../data/novantisData';
-import { Sparkles, Clock, Target, CheckCircle2, ArrowUpRight, ShieldCheck } from 'lucide-react';
-import { AssessmentOffer } from '../types';
+import { Clock, CheckCircle2, ArrowUpRight, ShieldCheck } from 'lucide-react';
 
 interface AssessmentOffersProps {
   onBookAssessment: (offerTitle: string) => void;
