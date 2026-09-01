@@ -25,7 +25,7 @@ export const CeoSection: React.FC = () => {
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden relative bg-gradient-to-b from-[#0A1224] to-black">
                   {/* Official Photo of Founder & CEO Waseem Khan */}
                   <img
-                    src="/assets/ceo-waseem-khan.jpg"
+                    src={`${import.meta.env.BASE_URL}assets/ceo-waseem-khan.jpg`}
                     alt="Waseem Khan, Founder & CEO of Novantis Global"
                     className="w-full h-full object-cover object-center contrast-105 group-hover:scale-105 transition-transform duration-700"
                   />
@@ -80,7 +80,7 @@ export const CeoSection: React.FC = () => {
 
               {/* Exact Approved Verbatim Quote Body */}
               <blockquote className="font-body font-light text-white/90 text-base sm:text-lg lg:text-xl leading-relaxed sm:leading-loose mb-8">
-                At Novantis Global, we believe meaningful technology begins with people, purpose, and trust. By bringing together deep enterprise platform expertise and practical AI innovation, we help businesses simplify complexity, work smarter, and adapt with confidence in a constantly changing world. Our work is not just about platforms or automation — it’s about enabling teams, improving experiences, and creating lasting value. Every step forward is powered by the passion, creativity, and commitment of our people. As the future of enterprise IT continues to evolve, we remain focused on building intelligent, reliable solutions that help organizations grow today and stay ready for tomorrow.
+                At Novantis Global, we believe meaningful technology begins with people, purpose, and trust. By bringing together deep enterprise platform expertise and practical AI innovation, we help businesses simplify complexity, work smarter, and adapt with confidence in a constantly changing world. Our work is not just about platforms or automation — it's about enabling teams, improving experiences, and creating lasting value. Every step forward is powered by the passion, creativity, and commitment of our people. As the future of enterprise IT continues to evolve, we remain focused on building intelligent, reliable solutions that help organizations grow today and stay ready for tomorrow.
               </blockquote>
 
               {/* Attribution Signature */}
